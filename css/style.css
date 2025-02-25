@@ -189,8 +189,8 @@
 }
 
 
-/*** Service ***/
-.service-item {
+/*** Facility ***/
+.facility-item {
     height: 320px;
     padding: 30px;
     display: flex;
@@ -202,26 +202,26 @@
     transition: .5s;
 }
 
-.service-item:hover {
+.facility-item:hover {
     background: var(--primary);
 }
 
-.service-item .service-icon {
+.facility-item .facility-icon {
     margin: 0 auto 30px auto;
     width: 65px;
     height: 65px;
     transition: .5s;
 }
 
-.service-item i,
-.service-item h5,
-.service-item p {
+.facility-item i,
+.facility-item h5,
+.facility-item p {
     transition: .5s;
 }
 
-.service-item:hover i,
-.service-item:hover h5,
-.service-item:hover p {
+.facility-item:hover i,
+.facility-item:hover h5,
+.facility-item:hover p {
     color: #FFFFFF !important;
 }
 
