@@ -222,7 +222,7 @@
 .facility-item:hover i,
 .facility-item:hover h5,
 .facility-item:hover p {
-    color: #FFFFFF !important;
+    color: #FFFFFF;
 }
 
 .facility-image {
