@@ -1,0 +1,30 @@
+Nearby Attractions (Update from Lowest KM to Highest KM)
+
+		Nature Camping Coorg
+SL NO.	NAME OF THE ATTRACTION PLACES		Distance 
+1	    ABBEY FALLS	                        17.9 KM
+2	    TALACAUVERY	                        40.8 KM
+3	    NAGARAHOLE NATIONAL PARK	        73.4 KM
+4	    NAMDROLING MONASTERY	            45.3 KM
+5	    TADIANDAMOL PEAK	                44.9 KM
+6	    RAJA'S SEAT	                        11.4 KM
+7	    OMKARESHWARA TEMPLE	      	 	  	11.2 KM
+8	    MADIKERI FORT	               	  	11.2 KM
+9	    BRAMAGIRI HILLS VIEW POINT	        12.6 KM
+10	    PUSHPAGIRI WILDLIFE SANCTUART	    69 KM
+11	    MALLALLI FALLS        	            64 KM
+12	    KOPATTY HILLS	                    24 KM
+13	    GADDIGE (Rajas Dom) 	            12.6 KM
+14	    CHIKLIHOLE DAM	                    34.9 KM
+15	    DUBARE ELEPHANT CAMP	            38.1 KM
+16	    HARANGI DAM	                        44.4 KM
+17	    HONNAMMANA KERE LAKE	            68.5 KM
+18	    KOTE BETTA TREK/ PEAK	            44.1 KM
+19   	MANDALPATTI TREK	                29.6 KM
+20		GENERAL THIMMAIAH MEMORIAL 	        11 KM
+21		IGUTHAPPA TEMPLE	                32.7 KM
+22		CHELAVARA FALLS	                	41 KM
+23		KOOTU HOLE DAM	                	17.7 KM
+24		VANACHALU FALLS	                	26 KM
+25		Star Gaze Observatory 	        	14.9KM
+
