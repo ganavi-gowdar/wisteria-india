@@ -50,8 +50,8 @@
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
                     <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center flex-column">
                         <h1 class="m-0 text-primary text-uppercase" style="font-size: 19px;">Nature Camping Coorg</h1>
-                        <small class="text-white" style="font-size: 14px;">By Stays 42 <a href="http://stays42.com" class="text-primary"></a></small>
-                    </a>
+                        
+                        <small class="text-white" style="font-size: 14px; text-align: right; display: block; width: 100%;">by Stays 42<a href="http://stays42.com" class="text-primary"></a></small>
                 </div>
                 <div class="col-lg-9">
                     <div class="row gx-0 bg-white d-none d-lg-flex">
@@ -143,7 +143,27 @@
                     <div class="col-lg-6">
                         <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
                         <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Nature Camping Coorg</span></h1>
-                        <p class="mb-4">We are offering 3 private bamboo cottages nestled in the heart of nature. Each cottage ia a tranquil retreat with its own attached bathroom. The nearby river stream adds to the serenity of your stay. Enjoy campfires ,parking, and trekking during your unforgettable getaway with us!</p>
+                        <p class="counter">Visitor Count: <span id="visit-count">0</span></p>
+
+    <script>
+        // Check if a visit count is stored in local storage
+        let visitCount = localStorage.getItem('page_view');
+
+        // If not, initialize it to 0
+        if (visitCount === null) {
+            visitCount = 0;
+        }
+
+        // Increment the visit count
+        visitCount++;
+
+        // Store the new value in local storage
+        localStorage.setItem('page_view', visitCount);
+
+        // Display the visit count
+        document.getElementById('visit-count').textContent = visitCount;
+    </script>
+                        <p class="mb-4">We are offering 3 private bamboo cottages nestled in the heart of nature. Each cottage ia a tranquil retreat with its own attached bathroom. The nearby river stream adds to the serenity of your stay. Enjoy campfires, parking, and trekking during your unforgettable getaway with us!</p>
                         <!---
                             <div class="row g-3 pb-4">
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
@@ -304,7 +324,7 @@
      
 
  <!-- Facility Start -->
- <div class="container-xxl py-5">
+<div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h6 class="section-title text-center text-primary text-uppercase">Our Facilities</h6>
@@ -317,9 +337,7 @@
                         <img class="img-fluid facility-image" src="img/Campfire space.jpg" alt="">
                     </div>
                     <div class="p-4 mt-2">
-                        <div class="d-flex justify-content-between mb-3">
-                            <h5 class="mb-0">Campfire</h5>
-                        </div>
+                        <h5 class="mb-0 text-center">Campfire</h5>
                         <p class="text-body mb-3">Our campfire experience is perfect for anyone looking to enjoy the great outdoors. Imagine sitting by the fire, feeling the warmth, and listening to the soothing sounds of the river stream nearby. It's an amazing way to unwind and connect with nature.</p>
                     </div>
                 </div>
@@ -330,9 +348,7 @@
                         <img class="img-fluid facility-image" src="img/Parking.jpg" alt="">
                     </div>
                     <div class="p-4 mt-2">
-                        <div class="d-flex justify-content-between mb-3">
-                            <h5 class="mb-0">Parking</h5>
-                        </div>
+                        <h5 class="mb-0 text-center">Parking</h5>
                         <p class="text-body mb-3">We offer our guests private parking within our premises, ensuring their vehicles are safe and secure. Our priority is to provide convenience and peace of mind during your visit.</p>
                     </div>
                 </div>
@@ -343,99 +359,79 @@
                         <img class="img-fluid facility-image" src="img/Trekking.jpg" alt="">
                     </div>
                     <div class="p-4 mt-2">
-                        <div class="d-flex justify-content-between mb-3">
-                            <h5 class="mb-0">Trekking</h5>
-                        </div>
+                        <h5 class="mb-0 text-center">Trekking</h5>
                         <p class="text-body mb-3">We offer an exciting trekking adventure at Nishani Motte with the added convenience of Jeep pick up and drop off. Get ready to experience the breathtaking beauty of the mountains and immerse yourself in nature. Don't miss out on this exhilarating opportunity!</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="row g-2 mt-3 ">
-    
-         
-    <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-wifi fa-2x text-primary"></i>
-            <h6 class="mt-2">Free Wifi</h6>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="0.5s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-tint fa-2x text-primary"></i>
-            <h6 class="mt-2">Drinking Water</h6>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="0.6s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-mug-hot fa-2x text-primary"></i>
-            <h6 class="mt-2">Tea & Coffee Maker in room</h6>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="0.7s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-fire-alt fa-2x text-primary"></i>
-            <h6 class="mt-2">Iron with Ironing Board</h6>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="0.8s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-toilet fa-2x text-primary"></i>
-            <h6 class="mt-2">Toiletries</h6>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="0.9s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-tshirt fa-2x text-primary"></i>
-            <h6 class="mt-2">Laundry Service</h6>
-            <p class="text-body small">(On Request)</p>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="1.1s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-car fa-2x text-primary"></i>
-            <h6 class="mt-2">Travel Assistance</h6>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="1.0s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-truck-monster fa-2x text-primary"></i>
-            <h6 class="mt-2">Jeep Safari</h6>
-            <p class="text-body small">(On Request)</p>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="1.1s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-hiking fa-2x text-primary"></i>
-            <h6 class="mt-2">Trekking</h6>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="1.1s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-book-open fa-2x text-primary"></i>
-            <h6 class="mt-2">Reading Lounge</h6>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="1.2s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-chess-knight fa-2x text-primary"></i>
-            <h6 class="mt-2">Indoor Games</h6>
-            <p class="text-body small">(On Request)</p>
-        </a>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6  wow fadeInUp" data-wow-delay="1.1s">
-        <a class="service-item rounded p-2 text-center small-box" href="">
-            <i class="fa fa-street-view fa-2x text-primary"></i>
-            <h6 class="mt-2">Guide</h6>
-            <p class="text-body small">(On Request)</p>
-        </a>
+        <div class="text-center mt-4">
+            <button id="viewMoreBtn" class="btn btn-primary">View More</button>
+        </div>
+        <div id="moreFacilities" class="row g-3 mt-3 text-center d-none">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-wifi fa-2x text-primary"></i>
+                <h6>Free Wifi</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-tint fa-2x text-primary"></i>
+                <h6>Drinking Water</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-mug-hot fa-2x text-primary"></i>
+                <h6>Tea & Coffee Maker</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-fire-alt fa-2x text-primary"></i>
+                <h6>Iron & Ironing Board</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-toilet fa-2x text-primary"></i>
+                <h6>Toiletries</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-tshirt fa-2x text-primary"></i>
+                <h6>Laundry Service</h6>
+                <h6>(On Request)</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-car fa-2x text-primary"></i>
+                <h6>Travel Assistance</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-truck-monster fa-2x text-primary"></i>
+                <h6>Jeep Safari</h6>
+                <h6>(On Request)</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-hiking fa-2x text-primary"></i>
+                <h6>Trekking</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-book-open fa-2x text-primary"></i>
+                <h6>Reading Lounge</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-chess-knight fa-2x text-primary"></i>
+                <h6>Indoor Games</h6>
+                <h6>(On Request)</h6>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <i class="fa fa-street-view fa-2x text-primary"></i>
+                <h6>Guide Service</h6>
+                <h6>(On Request)</h6>
+            </div>
+        </div>
     </div>
 </div>
 
-</div>
-</div>
+<script>
+    document.getElementById('viewMoreBtn').addEventListener('click', function() {
+        document.getElementById('moreFacilities').classList.toggle('d-none');
+        this.textContent = this.textContent === 'View More' ? 'View Less' : 'View More';
+    });
+</script>
+
 
 <!-- Facility End -->
        
@@ -484,7 +480,7 @@
                 <a class="btn btn-link btn-sm" href="near.txt">Nearby Attractions</a>
                 <a class="btn btn-link btn-sm" href="cancellation policy.txt">Cancellation Policy</a>
                 <a class="btn btn-link btn-sm" href="terms & conditions.txt">Terms & Condition</a>
-                <a class="btn btn-link btn-sm" href="">Support</a>
+                <a class="btn btn-link btn-sm" href="contact.html">Support</a>
             </div>
         </div>
     </div>
