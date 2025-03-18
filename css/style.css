@@ -596,7 +596,7 @@
     border-right: none;
 }
 
-/** cancellation policy  **/
+/*** cancellation policy  ***/
 .terms-list {
     list-style-type: none; /* Remove default list styling */
     padding: 0; /* Remove default padding */
