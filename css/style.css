@@ -154,7 +154,15 @@
     z-index: 1;
 }
 
+.carousel-item img {
+    max-height: 400px; /* Adjust this value to your desired height */
+    object-fit: cover; /* This will ensure the image covers the area without distortion */
+}
 
+.custom-title {
+    font-size: 2.5rem; /* Adjust this value to your desired size */
+    line-height: 1.2; /* Adjust line height if needed */
+}
 
 
 .title-wrap {
@@ -205,6 +213,70 @@
     display: none;
 }
 
+.service-item {
+    height: 320px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.service-item:hover {
+    background: var(--primary);
+}
+
+.service-item .service-icon {
+    margin: 0 auto 30px auto;
+    width: 65px;
+    height: 65px;
+    transition: .5s;
+}
+.service-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+}
+
+.small-box {
+    padding: 1.2rem !important; /* Slightly increase padding */
+    width: 75%; /* Increase width slightly */
+    height: 75%; /* Increase height slightly */
+}
+
+.small-box i {
+    font-size: 1.5rem !important; /* Adjust icon size */
+}
+
+.small-box h6 {
+    font-size: 0.9rem !important; /* Adjust heading size */
+}
+
+.small-box p {
+    font-size: 0.75rem !important; /* Adjust paragraph text size */
+}
+
+
+
+
+.service-item i,
+.service-item h5,
+.service-item p {
+    transition: .5s;
+}
+
+.service-item:hover i,
+.service-item:hover h5,
+.service-item:hover p {
+    color: #FFFFFF !important;
+}
 
 /*** Facility ***/
 .facility-item {
@@ -448,6 +520,7 @@
 
 
 /*** Footer ***/
+
 .newsletter {
     position: relative;
     z-index: 1;
@@ -521,4 +594,23 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+/** cancellation policy  **/
+.terms-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.terms-list li {
+    background-color: #e7f3ff; /* Light blue background */
+    border-left: 5px solid #007bff; /* Blue left border */
+    padding: 15px; /* Padding inside each list item */
+    margin-bottom: 15px; /* Space between list items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.terms-list li:hover {
+    background-color: #d1e7ff; /* Slightly darker blue on hover */
 }
