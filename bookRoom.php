@@ -14,8 +14,8 @@ $mail->SMTPDebug  = 0;
 $mail->SMTPAuth   = TRUE;
 $mail->SMTPSecure = "ssl";
 $mail->Port       = 465;
-$mail->Host       = "mail.gpcfindia.org";
-$mail->Username   = "stays42@gpcfindia.org";
+$mail->Host       = "mail.stays42.com";
+$mail->Username   = "inquiry@stays42.com";
 $mail->Password   = "Oogway@12345";
 
 if($_POST){
@@ -29,8 +29,8 @@ if(isset($_POST['select3']) && $_POST['select3'] != '') {
 if(isset($_POST['message']) && $_POST['message'] != '') 
 {   
      $mail->IsHTML(true);
-    $mail->AddAddress("stays42@gpcfindia.org", "recipient-name");
-    $mail->SetFrom('stays42@gpcfindia.org', "Nature Camping Coorg");
+    $mail->AddAddress("inquiry@stays42.com", "recipient-name");
+    $mail->SetFrom('inquiry@stays42.com', "Oleander Suites");
     $mail->AddReplyTo($_POST['email'], $_POST['name']);
     $mail->Subject = "Booking Details";
     $content = "<b>Name</b>:<b>".$_POST['name']."</b><br />
@@ -87,3 +87,4 @@ else {
 else{
 echo "not a valid post request";
 }
+
