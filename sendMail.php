@@ -10,7 +10,7 @@ $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->Mailer = "smtp";
 
-$mail->SMTPDebug  = 0;
+$mail->SMTPDebug  = 1;
 $mail->SMTPAuth   = TRUE;
 $mail->SMTPSecure = "ssl";
 $mail->Port       = 465;
@@ -25,8 +25,8 @@ if(isset($_POST['subject']) && $_POST['subject'] != '') {
 if(isset($_POST['message']) && $_POST['message'] != '')
  {   
      $mail->IsHTML(true);
-    $mail->AddAddress("inquiry@stays42.com", "recipient-name");
-    $mail->SetFrom('inquiry@stays42.com', "Oleander Suites");
+    $mail->AddAddress("mail.stays42.com", "recipient-name");
+    $mail->SetFrom("inquiry@stays42.com", "Nature Camping Coorg");
     $mail->AddReplyTo($_POST['email'], $_POST['name']);
     $mail->Subject = "Customer Contact";
     $content = "<b>Name</b>:<b>".$_POST['name']."</b><br />
@@ -63,4 +63,3 @@ else {
 else{
 echo "not a valid post request";
 }
-

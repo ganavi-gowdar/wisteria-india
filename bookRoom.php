@@ -29,8 +29,8 @@ if(isset($_POST['select3']) && $_POST['select3'] != '') {
 if(isset($_POST['message']) && $_POST['message'] != '') 
 {   
      $mail->IsHTML(true);
-    $mail->AddAddress("inquiry@stays42.com", "recipient-name");
-    $mail->SetFrom('inquiry@stays42.com', "Oleander Suites");
+    $mail->AddAddress("mail.stays42.com", "recipient-name");
+    $mail->SetFrom("inquiry@stays42.com", "Nature Camping Coorg");
     $mail->AddReplyTo($_POST['email'], $_POST['name']);
     $mail->Subject = "Booking Details";
     $content = "<b>Name</b>:<b>".$_POST['name']."</b><br />
@@ -87,4 +87,3 @@ else {
 else{
 echo "not a valid post request";
 }
-
