@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Nature Camping Coorg - Hotel HTML Template</title>
+    <title>Nature Camping Coorg</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -48,18 +48,25 @@
             <div class="col-lg-3 bg-dark position-relative">
                 <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center flex-column">
                     <div class="d-flex align-items-center">
-                        <h1 class="m-0 text-primary text-uppercase text-center" style="font-size: 19px;">Nature Camping Coorg</h1>
+                        <h1 class="m-0 text-primary text-uppercase text-center" style="font-size: 20px;">Nature Camping Coorg</h1>
                     </div>
                 </a>
                 <small class="text-white text-end position-absolute" 
                     style="font-size: 14px; width: auto; right: 35px; bottom: 30px;">
                     by Stays 42 <a href="http://stays42.com" class="text-primary"></a>
                 </small>
+                
+                 
             </div>
+            
             <div class="col-lg-9">
+                
                 <div class="row gx-0 bg-white d-none d-lg-flex">
-                    <div class="col-lg-7 px-5"></div> <!-- Empty column to maintain structure -->
+                    <div class="col-lg-7 px-5">  <div style="font-weight: bold; color: orange;">
+                                <?php include 'visit_count.php'; ?>
+                            </div> </div>
                     <div class="col-lg-5 px-5 text-end d-flex align-items-center justify-content-end">
+                         
                         <div class="me-4" style="white-space: nowrap;">
                             <i class="fa fa-phone-alt text-primary me-2"></i>
                             <span>+91 9341116699 / +91 6360893528</span>
@@ -71,16 +78,40 @@
                         </div>
                     </div>
                 </div>
+                <!-- Mobile View Only -->
+<!-- Mobile View Only -->
+<div class="row gx-0 bg-white d-flex d-lg-none justify-content-between align-items-center px-3 py-2">
+<div class="col-6">
+    <div style="font-weight: bold; color: orange; font-size: 14px;">
+        <!-- Ensure PHP script is executing in mobile view -->
+        <?php include 'visit_count.php'; ?>
+    </div>
+</div>
+<div class="col-6 text-end d-flex align-items-center justify-content-end">
+    <div class="me-2" style="white-space: nowrap;">
+        <i class="fa fa-phone-alt text-primary me-1"></i>
+        <span style="font-size: 14px;">+91 9341116699</span><br>
+        <i class="fa fa-phone-alt text-primary me-1"></i>
+        <span style="font-size: 14px;">+91 6360893528</span>
+    </div>
+    <div class="d-inline-flex align-items-center">
+        <a class="me-2" href="https://www.facebook.com/share/16HRMRCgGK/"><i class="fab fa-facebook-f"></i></a>
+        <a class="me-2" href="https://www.instagram.com/stays_42?igsh=MWZ5N3RsdXRmYmc5aQ=="><i class="fab fa-instagram"></i></a>
+        <a class="" href=""><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+</div>
+
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                     <a href="index.html" class="navbar-brand d-block d-lg-none">
-                    <!--   <h1 class="m-0 text-primary text-uppercase">Oleander Suites Coorg</h1>-->
+                    <!--    <h1 class="m-0 text-primary text-uppercase">Oleander Suites Coorg</h1>-->
                     </a>
-                    <button type="button" class="navbar-toggler order-0 me-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <button type="button" class="navbar-toggler order-o me-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav ms-auto py-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="index.php" class="nav-item nav-link active">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="room.html" class="nav-item nav-link">Rooms</a>
                             <a href="booking.html" class="nav-item nav-link">Booking</a>
@@ -93,8 +124,13 @@
             </div>
         </div>
     </div>
-    <!-- Header End --> 
-       
+    
+    
+    
+    
+    
+
+    <!-- Header End -->
       
        
     
